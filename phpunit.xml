@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         colors="true"
+         bootstrap="vendor/autoload.php"
+         verbose="true">
+    <testsuites>
+        <testsuite name="Test suite">
+            <directory suffix=".php">Tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <file>./User.php</file>
+            <file>./UserCache.php</file>
+            <file>./UserImport.php</file>
+        </whitelist>
+    </filter>
+</phpunit>

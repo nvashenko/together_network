@@ -1,0 +1,5 @@
+report
+phpcli
+vendor
+composer.lock
+.idea
